@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk55r2iovovmh"]
+
+[ext_resource type="Texture2D" uid="uid://cq51b7p7hp5yp" path="res://model-data/Gameworld.png" id="1_yn8ui"]
+[ext_resource type="Texture2D" uid="uid://or868ifq552g" path="res://model-data/wizard.png" id="2_3fus3"]
+[ext_resource type="Script" path="res://movement-char2D.gd" id="2_dw3ye"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="gameworld" type="Sprite2D" parent="."]
+texture = ExtResource("1_yn8ui")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_dw3ye")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-128, -3)
+scale = Vector2(4.05556, 2.56667)
+texture = ExtResource("2_3fus3")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
