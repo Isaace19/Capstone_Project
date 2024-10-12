@@ -1,20 +1,48 @@
-[gd_scene load_steps=4 format=3 uid="uid://dk55r2iovovmh"]
+[gd_scene load_steps=8 format=3 uid="uid://dk55r2iovovmh"]
 
 [ext_resource type="Texture2D" uid="uid://cq51b7p7hp5yp" path="res://model-data/Gameworld.png" id="1_yn8ui"]
 [ext_resource type="Texture2D" uid="uid://or868ifq552g" path="res://model-data/wizard.png" id="2_3fus3"]
-[ext_resource type="Script" path="res://movement-char2D.gd" id="2_dw3ye"]
+[ext_resource type="Script" path="res://movement.gd" id="2_4ykdr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5x76o"]
+size = Vector2(493, 217)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_30a34"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pgxt3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cr45j"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="gameworld" type="Sprite2D" parent="."]
 texture = ExtResource("1_yn8ui")
+centered = false
+offset = Vector2(270, 200)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="gameworld"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gameworld/StaticBody2D"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_5x76o")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-script = ExtResource("2_dw3ye")
+script = ExtResource("2_4ykdr")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(-128, -3)
 scale = Vector2(4.05556, 2.56667)
 texture = ExtResource("2_3fus3")
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="RigidBody2D" type="RigidBody2D" parent="CharacterBody2D/Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Sprite2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_30a34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_pgxt3")
+
+[node name="collision" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collision"]
+shape = SubResource("WorldBoundaryShape2D_cr45j")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://pow0dkkdur71"]
+
+[ext_resource type="Script" path="res://movement.gd" id="1_lcw0d"]
+[ext_resource type="Texture2D" uid="uid://or868ifq552g" path="res://model-data/wizard.png" id="2_7r5ux"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k3va8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+scale = Vector2(10, 10)
+script = ExtResource("1_lcw0d")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position_smoothing_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_k3va8")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_7r5ux")

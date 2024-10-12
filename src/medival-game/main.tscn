@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b48a1gtrqi2dd"]
+
+[ext_resource type="PackedScene" uid="uid://c2p026p8umg8d" path="res://gameworld.tscn" id="1_hh0g8"]
+[ext_resource type="PackedScene" uid="uid://pow0dkkdur71" path="res://character.tscn" id="2_rnk3b"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="overworld" parent="." instance=ExtResource("1_hh0g8")]
+position = Vector2(-128, 0)
+
+[node name="Node2D" parent="." instance=ExtResource("2_rnk3b")]
+position = Vector2(-13142, 4646)
+scale = Vector2(15, 15)

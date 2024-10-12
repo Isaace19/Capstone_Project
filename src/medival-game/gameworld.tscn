@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2p026p8umg8d"]
+
+[ext_resource type="Texture2D" uid="uid://cq51b7p7hp5yp" path="res://model-data/Gameworld.png" id="1_5ykrw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vdn6r"]
+size = Vector2(493, 219)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_vdn6r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(100, 100)
+texture = ExtResource("1_5ykrw")
