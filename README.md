@@ -1,7 +1,7 @@
 # **Capstone_Project**
-# Final Project for CS302
-# University of Tennessee, Knoxville 
-# Fall 2024 Semester
+ *Final Project for CS302*
+ *University of Tennessee, Knoxville* 
+ *Fall 2024 Semester*
 
 # **Project Members**:
     - **Colton Coughlin
