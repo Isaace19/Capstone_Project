@@ -1,18 +1,58 @@
-# Capstone_Project
+# **Capstone_Project**
+# Final Project for CS302
+# University of Tennessee, Knoxville 
+# Fall 2024 Semester
 
-Final Project for CS302
+# **Project Members**:
+    - **Colton Coughlin
+    - **Isaac Abella
+    - **John Cordwell III
 
-Recent Changes - Using New Names for project: Trames Adventura and Corbelyn
 
-Changes to Code: 
-*   Rebasing github to included a Depcrated Assets of our initial coding to 2D nodes.
-        New Code has dedicated directories to new character and word files that will extend to use similar scripts for modularity. 
-        New Code should also include a Procedural Generation Script that is in progress. We are planning to implement 
-        a new weighted system that will include different outomces depending on the current conditions of each character.
+## **Disclaimers**
+src directory in base is redundant but for some reason trying to delete it on local causes some issues, so I'm keeping it there for now. But it's just our earliest version of this game - IA
 
-My goals so far for the project:
-*   Implement a working XP system. 
-*   Attach dictionary stats to at least 3 - 5 characters - than make a weighted system of procedurally generating     stats
-*   Create a vector sorter to use compare dictionaries stored into a vector of characters
-* Implement Newton Fractals or Perlin Noise for world generation
 
+#### HOW TO USE:
+- Download the zip folder inside of Game_Project/Corebellyn/newfinalproject.zip
+- Import into godot
+- Enjoy!
+
+
+## **Description**
+OUr final project designed in godot to be a 2D turn combat style game with some fun mechanics.
+
+
+### Naming Convention:
+Corebelyn (Corebellyn?) - working "stable" version of the godot game implementation - headed by Colotn Coughlin & John Cordwell III
+
+    Included in our stable release are some of the following features:
+        - Working dictionaries and vectors/2D vectors. 
+        - Function turn base manager
+        - Smooth movements
+        - Interactive buttons
+        - Detailed Game world
+        - Start Menus
+        - Attack, Run, Defend Options
+        - Party and Enemy Systems
+
+Trames-Adventura - lots of theoretical work that either never fully integrated or got too ambitious for the project - headed by Isaac Abella
+
+    Included in Trames-Adventura are some of the theoretical scripts
+        - Procedural Generation for weapons, dictionary stats, and character classes
+        - Abstract class creation for player characters
+        - Custom vector sorts - (Superseded by turns manager used in Corebelyn)
+        - Inventory System
+        - Weapon System - (Simple attack feature favored instead)
+        - Combat System 1.0 (Deeper combat logic)
+        - Experience System
+    
+
+### Big Changes to our repo so far:
+    Lots of rebasing - i.e: removing lots of dead end submodules, adding in readmes, cleaning up directories that didn't have much explanation. 
+
+
+### Going forward:
+
+    Finish up manager end sequence for when health bars go to to 0 for either enemy or player health
+    Attempt last minute procedural generation on terrain using png files since they look so cool.

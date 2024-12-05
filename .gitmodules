@@ -1,0 +1,6 @@
+[submodule "Game_Project/trames-adventura"]
+	path = Game_Project/trames-adventura
+	url = git@github.com:Isaace19/trames-adventura.git
+[submodule "Game_Project/Corebellyn"]
+	path = Game_Project/Corebellyn
+	url = git@github.com:Isaace19/Corebellyn.git
