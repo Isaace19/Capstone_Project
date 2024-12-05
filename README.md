@@ -20,7 +20,7 @@ src directory in base is redundant but for some reason trying to delete it on lo
 
 
 ## **Description**
-OUr final project designed in godot to be a 2D turn combat style game with some fun mechanics.
+Our final project designed in godot to be a 2D turn combat style game with some fun mechanics.
 
 
 ### Naming Convention:
