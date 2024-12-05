@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1728761248
+character.tscn::PackedScene::1083114535293071918::1728761211::0::1::::<><>::res://movement.gd<>uid://or868ifq552g::::res://model-data/wizard.png
+collision_shape_2d.gd::GDScript::-1::1728761183::0::1::::<>CollisionShape2D<>::
+First-init.tscn::PackedScene::7924935119514420595::1728759073::0::1::::<><>::uid://cq51b7p7hp5yp::::res://model-data/Gameworld.png<>uid://or868ifq552g::::res://model-data/wizard.png<>res://movement.gd
+gameworld.tscn::PackedScene::6700473606101063037::1728761206::0::1::::<><>::uid://cq51b7p7hp5yp::::res://model-data/Gameworld.png
+icon.svg::CompressedTexture2D::4325238553813075810::1727748834::1727748882::1::::<><>::
+main.tscn::PackedScene::4490068391007054197::1728761233::0::1::::<><>::uid://c2p026p8umg8d::::res://gameworld.tscn<>uid://pow0dkkdur71::::res://character.tscn
+movement.gd::GDScript::-1::1728761183::0::1::::<>CharacterBody2D<>::
+::res://model-data/::1727749588
+Gameworld.png::CompressedTexture2D::5959376331205530335::1727732239::1727749584::1::::<><>::
+grass1.png::CompressedTexture2D::9043789818459279761::1727732257::1727749584::1::::<><>::
+wizard.png::CompressedTexture2D::1019798999002577956::1727732252::1727749584::1::::<><>::

@@ -1,0 +1,23 @@
+﻿CS 302 - Data Structures and Algorithms - Capstone Project
+Group Members: Isaac Abella, Colton Coughlin, John Cordwell IV
+
+
+Update #2
+Project - Godot Engine 2D Game Implementation
+
+
+Progres on Code: 
+Since our initial update, we have finalized character game movement, better github collaboration integration to store files, and working on implementing our Data structure requirement into our game. We have also looked more into the features of Godot, mainly more into GDscript and the libraries included such as SFX libraries after a proposal to include a soundtrack and effects was brought up. 
+
+In terms of Data Structures, it looks like we will be using a version of Vector/Unordered_Map to give each player and enemy a unique set of weapons, perks, abilities, and stats. And for combat, we will have a priority queue that determines outcomes such as who attacks first, status effect duration, based on the stats compared between players. This is all based on online examples and some discussion as we begin to put things together.
+
+
+Progress to Overall Project:
+ Tentatively, we have started to look into first drafts of player models and world models. We’ve been using online documentation and relevant youtube tutorials and example codes to work on our game more.
+The following are currently being used to explore the possibility of scripting in transitions for things such as moving between backgrounds, battles, dialogue, etc…
+https://www.youtube.com/watch?v=25mk6zcBMa8&list=PLqe-MDIGWTboCnmZmepgm5dnd1j636DqG&index=4
+https://www.youtube.com/watch?v=ZCGBPe-rfNE&list=PLqe-MDIGWTboCnmZmepgm5dnd1j636DqG&index=2
+
+Current Goals as the Project approaches December: We want to mainly implement the data structure into our code already so we can meet all of the project goals. We also want to focus on configuring github as well as meetings so we can be more efficient and help out with the work as the demand to do more increases. We also want to move into looking into our art and deciding what works for our overall theme. 
+
+Miscellaneous Objectives - Create a Story, Decide on a Name for the Game, prepare and add examples to our slideshow presentation, develop a test version for TAs
